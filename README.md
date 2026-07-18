@@ -4,6 +4,7 @@ Project Architecture Overview
 
 This project follows a modern Medallion pipeline architecture designed to process, clean, and model data incrementally within MySQL:
 
+```text
 [ Data Sources ]       ┌─────────────────────────────────────────────────────────────┐       [ Consumption ]
                        │                      DATA WAREHOUSE                         │
  ┌───────────┐         │   ┌──────────────┐    ┌──────────────┐    ┌─────────────┐   │         ┌─────────────────┐
@@ -15,6 +16,9 @@ This project follows a modern Medallion pipeline architecture designed to proces
                                                                                                ┌─────────────────┐
                                                                                                │   ML Pipelines  │
                                                                                                └─────────────────┘
+```
+
+
 🛠️ Medallion Pipeline Specifications
 🥉Bronze Layer (Raw Data)Source: CRM & ERP CSV files loaded via batch folder drops.Transformation: None. Data is loaded as-is into staging tables using Full Load (Truncate & Insert).
 
