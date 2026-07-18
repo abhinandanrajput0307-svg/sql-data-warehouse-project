@@ -1,6 +1,6 @@
 Modern Data Warehouse & Analytics EngineA production-ready Data Warehouse built on MySQL, implementing a clear Medallion Architecture (Bronze, Silver, and Gold layers) to transform raw transactional data into clean, business-ready analytical datasets.
 
-🚀 Architecture OverviewPlaintext
+Architecture
 ┌───────────────┐     ┌──────────────┐     ┌──────────────┐     ┌─────────────┐     ┌─────────────────┐
 │ Data Sources  │ ──▶ │ Bronze Layer │ ──▶ │ Silver Layer │ ──▶ │ Gold Layer  │ ──▶ │   Consumption   │
 │ (CRM/ERP CSV) │     │  (Raw Data)  │     │  (Cleaned)   │     │ (Biz Ready) │     │  (BI/SQL/ML)    │
