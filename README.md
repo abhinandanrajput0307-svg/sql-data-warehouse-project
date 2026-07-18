@@ -27,9 +27,14 @@ This project follows a modern Medallion pipeline architecture designed to proces
 
 🥇 Gold Layer (Business Ready)Transformation: Applies business logic and aggregations.Data Model: Modeled into Star Schemas, flat tables, and aggregated structures.Storage: Implemented as virtual Views (no physical storage/load required).
 
-📊 Data Consumption LayerThe business-ready datasets in the Gold Layer power three core downstream tracks:BI and Reporting: Clean data feeds for interactive dashboards (e.g., Power BI, Tableau).Ad-Hoc SQL Queries: Simplified, pre-joined tables for fast analyst queries.Machine Learning: Cured flat views ready for data science feature engineering.
+📊 Data Consumption Layer
+
+The business-ready datasets in the Gold Layer power three core downstream tracks:BI and Reporting: Clean data feeds for interactive dashboards (e.g., Power BI, Tableau).Ad-Hoc SQL Queries: Simplified, pre-joined tables for fast analyst queries.Machine Learning: Cured flat views ready for data science feature engineering.
 
 👨‍💻 About Me
+
 Hi, I'm Abhinandan Kumar! I am a passionate data professional currently pivoting into Data Analytics and Business Intelligence. With a strong foundational background in managing customer-centric workflows and operations, I focus on transforming messy operational data into clean, structured, and highly actionable enterprise insights.  Technical Focus: SQL, Data Warehouse Architecture, ETL/ELT Pipelines, Excel, and Power BI.  Core Philosophy: Building clean, optimized, and well-documented data environments that enable quick, data-driven decisions.
 
-📄 LicenseThis project is licensed under the MIT License - see the LICENSE file for details.
+📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
