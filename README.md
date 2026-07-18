@@ -8,7 +8,7 @@ This project follows a modern Medallion pipeline architecture designed to proces
 [ Data Sources ]       ┌─────────────────────────────────────────────────────────────┐       [ Consumption ]
                        │                      DATA WAREHOUSE                         │
  ┌───────────┐         │   ┌──────────────┐    ┌──────────────┐    ┌─────────────┐   │         ┌─────────────────┐
- │ CRM (CSV) │ ───────▶│──▶│ Bronze Layer │───▶│ Silver Layer │───▶│ Gold Layer  │───│────────▶│ BI & Reporting  │
+ │ CRM (CSV) │ ───────▶│──▶│ Bronze Layer │───▶│ Silver Layer │───▶│ Gold Layer  │───│────────▶│ BI & Reporting │
  └───────────┘         │   │  (Raw Data)  │    │  (Cleaned)   │    │ (Biz Ready) │   │         └─────────────────┘
  ┌───────────┐         │   └──────────────┘    └──────────────┘    └─────────────┘   │         ┌─────────────────┐
  │ ERP (CSV) │ ───────▶│                                                             │────────▶│ Ad-Hoc Queries  │
@@ -20,6 +20,7 @@ This project follows a modern Medallion pipeline architecture designed to proces
 
 
 🛠️ Medallion Pipeline Specifications
+
 🥉Bronze Layer (Raw Data)Source: CRM & ERP CSV files loaded via batch folder drops.Transformation: None. Data is loaded as-is into staging tables using Full Load (Truncate & Insert).
 
 🥈 Silver Layer (Cleaned & Standardized)Transformation: Focuses on data cleaning, standardization, normalization, and adding derived or enriched columns.Structure: Physical tables updated via batch processing.
